@@ -151,6 +151,11 @@ rm Meslo.zip
 
 # Cursors
 wget -cO- https://github.com/phisch/phinger-cursors/releases/latest/download/phinger-cursors-variants.tar.bz2 | tar xfj - -C ~/.icons
+git clone https://github.com/alvatip/Nordzy-cursors
+cd Nordzy-cursors || exit
+./install.sh
+cd "$builddir" || exit
+rm -rf Nordzy-cursors
 
 
 # install-OneUI
