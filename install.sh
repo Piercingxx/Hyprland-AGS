@@ -9,7 +9,6 @@ pacman -S zip unzip gzip tar make cmake curl wget --noconfirm
 pacman -S libdbusmenu-gtk3 --noconfirm 
 pacman -S ddcutil --noconfirm 
 pacman -S libsoup3 --noconfirm
-pacman -S 
 pacman -S polkit-gnome --noconfirm 
 pacman -S gnome-keyring --noconfirm 
 pacman -S gnome-control-center --noconfirm 
