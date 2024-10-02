@@ -6,7 +6,10 @@ builddir=$(pwd)
 # Basics
 pacman -Syu
 pacman -S zip unzip gzip tar make cmake curl wget --noconfirm 
-pacman -S libdbusmenu-gtk3 ddcutil --noconfirm 
+pacman -S libdbusmenu-gtk3 --noconfirm 
+pacman -S ddcutil --noconfirm 
+pacman -S libsoup3 --noconfirm
+pacman -S 
 pacman -S polkit-gnome --noconfirm 
 pacman -S gnome-keyring --noconfirm 
 pacman -S gnome-control-center --noconfirm 
@@ -61,7 +64,8 @@ yay -S eww --noconfirm
 yay -S dconf --noconfirm
 yay -S microtex-git --noconfirm
 yay -S visual-studio-code-bin --noconfirm
-
+yay -S power-profiles-daemon-git --noconfirm
+yay -S upower --noconfirm
 
 # Install necessary packages using Paru
 paru -Syu 
@@ -98,6 +102,33 @@ paru -S light --noconfirm
 paru -S nwg-look --noconfirm
 paru -S yad --noconfirm
 paru -S sox --noconfirm
+paru -S python-materialyoucolor-git --noconfirm
+paru -S gradience --noconfirm
+paru -S python-libsass --noconfirm
+paru -S python-material-color-utilities --noconfirm
+paru -S python-build --noconfirm
+paru -S python-pillow --noconfirm
+paru -S python-pywal --noconfirm
+paru -S python-setuptools-scm --noconfirm
+paru -S python-wheel --noconfirm
+paru -S swappy --noconfirm
+paru -S wf-recorder --noconfirm
+paru -S grim --noconfirm
+paru -S tesseract --noconfirm
+paru -S tesseract-data-eng --noconfirm
+paru -S slurp --noconfirm
+paru -S tinyxml2 --noconfirm
+paru -S gtkmm3 --noconfirm
+paru -S gtksourceviewmm --noconfirm
+paru -S cairomm --noconfirm
+paru -S webp-pixbuf-loader --noconfirm
+paru -S gtk-layer-shell --noconfirm
+paru -S gtk3 --noconfirm
+paru -S gtksourceview3 --noconfirm
+paru -S gobject-introspection --noconfirm
+paru -S yad --noconfirm
+paru -S ydotool --noconfirm
+paru -S xdg-user-dirs-gtk --noconfirm
 paru -S mint-themes --noconfirm
 paru -S xcursor-simp1e-gruvbox-light --noconfirm
 paru -S qt5-wayland --noconfirm
