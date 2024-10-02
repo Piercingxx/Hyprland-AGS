@@ -41,7 +41,6 @@ paru -S hyprpaper --noconfirm
 paru -S hyprlock --noconfirm
 paru -S hypridle --noconfirm
 paru -S hyprpicker --noconfirm
-paru -S waybar --noconfirm
 paru -S wl-gammarelay --noconfirm
 paru -S swww --noconfirm
 paru -S pamixer --noconfirm
