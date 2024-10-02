@@ -1,7 +1,31 @@
 #!/bin/bash
+username=$(id -u -n 1000)
+builddir=$(pwd)
 
+
+# Basics
 pacman -Syu
-pacman -S zip unzip gzip tar make --noconfirm 
+pacman -S zip unzip gzip tar make cmake curl wget --noconfirm 
+pacman -S libdbusmenu-gtk3 ddcutil --noconfirm 
+pacman -S polkit-gnome --noconfirm 
+pacman -S gnome-keyring --noconfirm 
+pacman -S gnome-control-center --noconfirm 
+pacman -S blueberry networkmanager --noconfirm 
+pacman -S gammastep --noconfirm 
+pacman -S gnome-bluetooth-3.0 --noconfirm 
+pacman -S axel --noconfirm 
+pacman -S bc --noconfirm 
+pacman -S coreutils --noconfirm 
+pacman -S cliphist --noconfirm 
+pacman -S fuzzel --noconfirm 
+pacman -S rsync --noconfirm 
+pacman -S ripgrep --noconfirm 
+pacman -S jq --noconfirm 
+pacman -S npm --noconfirm 
+pacman -S meson --noconfirm 
+pacman -S typescript --noconfirm 
+pacman -S gjs --noconfirm 
+pacman -S xdg-user-dirs --noconfirm 
 
 
 # Enable Bluetooth
@@ -28,9 +52,15 @@ makepkg -si --noconfirm && cd ..
 
 # First round of installs
 yay -S aylurs-gtk-shell --noconfirm
+yay -S fcitx5-git --noconfirm
+yay -S rubik-git --noconfirm
+yay -S easyeffects-git --noconfirm
 yay -S hyprshot --noconfirm
+yay -S hyprutils --noconfirm
 yay -S eww --noconfirm
 yay -S dconf --noconfirm
+yay -S microtex-git --noconfirm
+yay -S visual-studio-code-bin --noconfirm
 
 
 # Install necessary packages using Paru
@@ -41,6 +71,12 @@ paru -S hyprpaper --noconfirm
 paru -S hyprlock --noconfirm
 paru -S hypridle --noconfirm
 paru -S hyprpicker --noconfirm
+paru -S dart-sass --noconfirm
+paru -S python-pywayland --noconfirm
+paru -S python-psutil --noconfirm
+paru -S wlogout --noconfirm
+paru -S wl-clipboard --noconfirm
+paru -S anyrun-git --noconfirm
 paru -S wl-gammarelay --noconfirm
 paru -S swww --noconfirm
 paru -S pamixer --noconfirm
@@ -69,6 +105,16 @@ paru -S xdg-desktop-portal --noconfirm
 paru -S xdg-desktop-portal-gtk --noconfirm
 paru -S xdg-desktop-portal-hyprland --noconfirm
 paru -S papirus-icon-theme --noconfirm
+paru -S adw-gtk-theme-git --noconfirm
+paru -S qt5ct --noconfirm
+paru -S qt5-wayland --noconfirm
+paru -S fontconfig --noconfirm
+paru -S ttf-readex-pro --noconfirm
+paru -S ttf-jetbrains-mono-nerd --noconfirm
+paru -S ttf-material-symbols-variable-git --noconfirm
+paru -S ttf-space-mono-nerd --noconfirm
+paru -S ttf-rubik-vf --noconfirm
+paru -S ttf-gabarito-git --noconfirm
 paru -S ttf-firacode --noconfirm
 paru -S awesome-terminal-fonts --noconfirm
 paru -S ttf-ms-fonts --noconfirm
@@ -81,8 +127,7 @@ paru -S gimp-devel --noconfirm
 paru -S vesktop --noconfirm
 
 
-
-
+# Flatpak Apps
 flatpak install flathub com.google.Chrome -y
 flatpak install flathub md.obsidian.Obsidian -y
 flatpak install flathub com.dropbox.Client -y
@@ -93,7 +138,7 @@ flatpak install flathub io.missioncenter.MissionCenter -y
 flatpak install flathub com.valvesoftware.Steam -y
 
 
-
+# More Fonts
 mkdir -p $HOME/.fonts
 cd $HOME/.fonts
 wget https://github.com/ryanoasis/nerd-fonts/releases/download/v2.1.0/FiraCode.zip
@@ -103,6 +148,20 @@ unzip Meslo.zip
 rm Firacode.zip
 rm Meslo.zip
 
+
+
+
+# install-OneUI
+sudo mkdir -p /usr/local/share/icons
+wget https://github.com/end-4/OneUI4-Icons/archive/refs/heads/main.zip
+unzip main
+cd OneUI4-Icons-main
+sudo cp -r OneUI /usr/local/share/icons
+sudo cp -r OneUI-dark /usr/local/share/icons
+sudo cp -r OneUI-light /usr/local/share/icons
+cd ..
+sudo rm -Rf OneUI4-Icons-main
+sudo rm main.zip
 
 
 
