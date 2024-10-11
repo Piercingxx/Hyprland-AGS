@@ -25,6 +25,7 @@ pacman -S ripgrep --noconfirm
 pacman -S jq --noconfirm 
 pacman -S npm --noconfirm 
 pacman -S meson --noconfirm 
+pacman -S typescript --noconfirm 
 pacman -S gjs --noconfirm 
 pacman -S xdg-user-dirs --noconfirm 
 
