@@ -25,9 +25,12 @@ pacman -S ripgrep --noconfirm
 pacman -S jq --noconfirm 
 pacman -S npm --noconfirm 
 pacman -S meson --noconfirm 
-pacman -S typescript --noconfirm 
 pacman -S gjs --noconfirm 
 pacman -S xdg-user-dirs --noconfirm 
+
+#bun
+curl -fsSL https://bun.sh/install | bash && \
+  sudo ln -s $HOME/.bun/bin/bun /usr/local/bin/bun
 
 
 # Enable Bluetooth
@@ -68,6 +71,8 @@ yay -S upower --noconfirm
 
 # Install necessary packages using Paru
 paru -Syu 
+paru -S cava --noconfirm
+paru -S ranger --noconfirm
 paru -S cliphist --noconfirm
 paru -S hyprland --noconfirm
 paru -S hyprpaper --noconfirm
@@ -128,7 +133,6 @@ paru -S gobject-introspection --noconfirm
 paru -S yad --noconfirm
 paru -S ydotool --noconfirm
 paru -S xdg-user-dirs-gtk --noconfirm
-paru -S mint-themes --noconfirm
 paru -S xcursor-simp1e-gruvbox-light --noconfirm
 paru -S qt5-wayland --noconfirm
 paru -S xdg-desktop-portal --noconfirm
