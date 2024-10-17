@@ -160,7 +160,8 @@ paru -S nautilus-open-any-terminal --noconfirm
 paru -S code-nautilus-git --noconfirm
 paru -S gimp-devel --noconfirm
 paru -S vesktop --noconfirm
-
+paru -S synochat --noconfirm
+paru -S synology-drive --noconfirm
 
 # Flatpak Apps
 flatpak install flathub com.google.Chrome -y
