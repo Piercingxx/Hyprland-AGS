@@ -162,6 +162,7 @@ paru -S gimp-devel --noconfirm
 paru -S vesktop --noconfirm
 paru -S synochat --noconfirm
 paru -S synology-drive --noconfirm
+paru -S visual-studio-code-bin --noconfirm
 
 # Flatpak Apps
 flatpak install flathub com.google.Chrome -y
