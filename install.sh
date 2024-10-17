@@ -66,9 +66,9 @@ yay -S hyprutils --noconfirm
 yay -S eww --noconfirm
 yay -S dconf --noconfirm
 yay -S microtex-git --noconfirm
-yay -S visual-studio-code-bin --noconfirm
 yay -S power-profiles-daemon-git --noconfirm
 yay -S upower --noconfirm
+yay -S google-chrome --noconfirm
 
 # Install necessary packages using Paru
 paru -Syu 
@@ -165,7 +165,6 @@ paru -S synology-drive --noconfirm
 paru -S visual-studio-code-bin --noconfirm
 
 # Flatpak Apps
-flatpak install flathub com.google.Chrome -y
 flatpak install flathub md.obsidian.Obsidian -y
 flatpak install flathub com.dropbox.Client -y
 flatpak install flathub org.libreoffice.LibreOffice -y
